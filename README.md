@@ -4,6 +4,7 @@
 ### Resources
 **Source of Data** : https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://data.cdc.gov/resource/n8mc-b4w4.json
 
+Json Data info: 19 columns, 28,652,764 rows. 
 
 ## Overview of Project
 This is the branch Alan Fanng will push into. His first assingment is to create the provisional database that stands in for the final database, it mus accomplish the following: 
