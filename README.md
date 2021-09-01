@@ -40,5 +40,9 @@ CREATE TABLE covid_data (
   underlying_conditions_yn TEXT
 );
 ```
+## DATA LOAD
 
+We load the data found here:
+
+https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data
 
