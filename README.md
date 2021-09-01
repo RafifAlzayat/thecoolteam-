@@ -1,7 +1,7 @@
 # Covid Analysis
 
 ## AWS DB
-We are using a postgresql on AWS; to access the db use the following; reachout to Rafif for the username and password:
+We are using a postgresql on AWS; to access the db use the following:
 
 AWS URL: database-1.cvyxzrizmaqm.us-east-1.rds.amazonaws.com
 
@@ -28,8 +28,8 @@ CREATE TABLE covid_data (
   sex TEXT,
   race TEXT,
   ethnicity TEXT,
-  case_positive_specimen_interval Boolean,
-  case_onset_interval Boolean,
+  case_positive_specimen_interval TEXT,
+  case_onset_interval TEXT,
   process TEXT,
   exposure_yn TEXT,
   current_status TEXT,
