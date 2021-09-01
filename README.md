@@ -3,6 +3,7 @@
 ## DATA TABLE CREATION
 We are using a postgresql on AWS. To create the table we used the following SQL:
 
+```
 CREATE TABLE covid_data (
   id TEXT PRIMARY KEY NOT NULL,
   case_month DATE,
@@ -25,6 +26,6 @@ CREATE TABLE covid_data (
   death_yn TEXT,
   underlying_conditions_yn text
 );
-
+```
 
 
