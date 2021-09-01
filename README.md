@@ -1,8 +1,22 @@
 # Covid Analysis
 
-## DATA TABLE CREATION
-We are using a postgresql on AWS. To create the table we used the following SQL:
+## AWS DB
+We are using a postgresql on AWS; to access the db use the following; reachout to Rafif for the username and password:
 
+AWS URL: database-1.cvyxzrizmaqm.us-east-1.rds.amazonaws.com
+
+Port: 5432
+
+DB name: postgres
+
+Schema: finalProject
+
+Username: [ask rafif]
+
+Password: [ask rafif]
+
+## DATA TABLE CREATION
+To create the table we used the following SQL:
 ```
 CREATE TABLE covid_data (
   id TEXT PRIMARY KEY NOT NULL,
