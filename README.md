@@ -19,8 +19,7 @@ Password: [ask rafif]
 To create the table we used the following SQL:
 ```
 CREATE TABLE covid_data (
-  id TEXT PRIMARY KEY NOT NULL,
-  case_month DATE,
+  case_month TEXT,
   res_state TEXT,
   state_fips_code TEXT,
   res_county TEXT,
@@ -38,7 +37,7 @@ CREATE TABLE covid_data (
   hosp_yn TEXT,
   icu_yn TEXT,
   death_yn TEXT,
-  underlying_conditions_yn text
+  underlying_conditions_yn TEXT
 );
 ```
 
