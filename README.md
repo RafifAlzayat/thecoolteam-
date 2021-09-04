@@ -19,4 +19,4 @@
   
   We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
   
-### From Ava: A logistic regression model is a classification model, so I think we would be able to use it. We just need to change our data into numbers   via dummy variables, just like with the rest of the models. 
+
