@@ -36,6 +36,9 @@ Our team has chosen to analyze covid data from the CDC. We selected this data du
   
   We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
   
+  The diagram for the machine learning model is below: 
+  ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Machine%20Learning%20Model%20Diagram.jpg)
+  
  ## Database Information
  
 
