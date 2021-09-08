@@ -96,7 +96,7 @@ https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Dat
 
 ## Cleaned Covid Data CSV File
 S3 bucket URI to cleaned data: s3://rafifcoviddata/cleaned_covid_data.csv
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/cleaned_data_sample)
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
   
 
