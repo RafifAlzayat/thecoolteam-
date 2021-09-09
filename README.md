@@ -8,6 +8,9 @@ Json Data info: 19 columns, 28,652,764 rows.
 
 ## Overview and Timeline of Project
 
+### Update 09/08/2021
+Threw in the cleaned covid csv file into jupyter notebook and split the data to test and train them. As it turns out the data is too massive to be handeled in a pandas so therefore we would have to try writing them on pyspark on google colab, if that doesnt work then we'll try something else. I have written the two codes of Resampling and Ensemble as if they would be written in Jupyter notebook as a framework of what we need to do on google colab. So theres that. The cleaned csv that took so long works perfeclty tho, big ups. At least we can keep everything in one big google colab file in the premilmiary database., 
+
 
 
 ### Update 09/01/2021
