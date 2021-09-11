@@ -98,5 +98,10 @@ https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Dat
 S3 bucket URI to cleaned data: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
-  
+## Dashboard
+
+### Covid Hospitalizations Dashboard 
+Link to tableau public: https://public.tableau.com/views/CovidHospitalizationAnalysis/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/ava-branch/Dashboard%201.png)
+
 
