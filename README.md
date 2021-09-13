@@ -5,6 +5,9 @@
 
 Json Data info: 19 columns, 28,652,764 rows. 
 
+**Cleaned Covid Data CSV File**: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
+
 **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
 ## Data Topic and Overview
@@ -103,10 +106,6 @@ https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Dat
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/2.png)
 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/3.png)
-
-## Cleaned Covid Data CSV File
-S3 bucket URI to cleaned data: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
 ## Dashboard
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. 
