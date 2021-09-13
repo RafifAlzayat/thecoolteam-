@@ -94,6 +94,8 @@ S3 bucket URI to cleaned data: https://rafifcoviddata.s3.amazonaws.com/cleaned_c
 ### Covid Hospitalizations Dashboard 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/ava-branch/Hospitalizations.png)
+
+### Covid by State Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/ava-branch/Map.png)
 
 
