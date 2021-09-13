@@ -13,7 +13,7 @@ Json Data info: 19 columns, 28,652,764 rows.
 ## Data Topic and Overview
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
-Ava to add: 
+**Ava to add:** 
 ✓ Description of the data exploration phase of the project 
 ✓ Description of the analysis phase of the project
 
@@ -36,7 +36,7 @@ We will create each one of these models with our COVID-19 data, and tweak the pa
   
 We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
 
-Ryan/Alan to add: 
+**Ryan/Alan to add: **
 ✓ Description of preliminary data preprocessing 
 ✓ Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
 ✓ Description of how data was split into training and testing sets 
@@ -62,7 +62,7 @@ Username: [ask rafif]
 
 Password: [ask rafif]
 
-Rafif to add: 
+**Rafif to add: **
 ✓ Database stores static data for use during the project 
 ✓ Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
 ✓ Includes at least two tables (or collections, if using MongoDB) 
