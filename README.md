@@ -10,9 +10,13 @@ Json Data info: 19 columns, 28,652,764 rows.
 ## Data Topic and Overview
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
+Ava to add: 
+✓ Description of the data exploration phase of the project 
+✓ Description of the analysis phase of the project
+
 ## Machine Learning Models
 
- Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
+Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
   
   * Linear Least Squares
   * Ridge Regression
@@ -28,6 +32,12 @@ Our team has chosen to analyze covid data from the CDC. We selected this data du
 We will create each one of these models with our COVID-19 data, and tweak the parameters to test for under fitting or over fitting, to figure out which models and at what parameters are best for visualizing certain conclusions about the data. All of our models will be supervized machine learning models.
   
 We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
+
+Ryan/Alan to add: 
+✓ Description of preliminary data preprocessing 
+✓ Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+✓ Description of how data was split into training and testing sets 
+✓ Explanation of model choice, including limitations and benefits
   
 The diagram for the machine learning model is below: 
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Machine%20Learning%20Model%20Diagram.jpg)
@@ -48,6 +58,14 @@ Schema: finalProject
 Username: [ask rafif]
 
 Password: [ask rafif]
+
+Rafif to add: 
+✓ Database stores static data for use during the project 
+✓ Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
+✓ Includes at least two tables (or collections, if using MongoDB) 
+✓ Includes at least one join using the database language (not including any joins in Pandas) 
+✓ Includes at least one connection string (using SQLAlchemy or PyMongo)
+Note: If you use a SQL database, you must provide your ERD with relationships.
 
 ### DATA TABLE CREATION
 To create the table we used the following SQL:
@@ -91,6 +109,7 @@ S3 bucket URI to cleaned data: https://rafifcoviddata.s3.amazonaws.com/cleaned_c
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
 ## Dashboard
+The dashboards create so far have used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. 
 
 ### Covid Hospitalizations Dashboard 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
