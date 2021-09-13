@@ -14,8 +14,8 @@ Json Data info: 19 columns, 28,652,764 rows.
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
 **Ava to add:** 
-✓ Description of the data exploration phase of the project 
-✓ Description of the analysis phase of the project
+**✓ Description of the data exploration phase of the project 
+✓ Description of the analysis phase of the project**
 
 ## Machine Learning Models
 
@@ -64,8 +64,8 @@ Password: [ask rafif]
 
 **Rafif to add:** 
 ✓ Database stores static data for use during the project 
-✓ Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
-✓ Includes at least two tables (or collections, if using MongoDB) 
+**✓ Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
+**✓ Includes at least two tables (or collections, if using MongoDB) 
 ✓ Includes at least one join using the database language (not including any joins in Pandas) 
 ✓ Includes at least one connection string (using SQLAlchemy or PyMongo)
 Note: If you use a SQL database, you must provide your ERD with relationships.
