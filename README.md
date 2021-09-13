@@ -32,7 +32,6 @@ The diagram for the machine learning model is below:
   
  ## Database Information
  
-
 ### AWS DB
 We are using a postgresql on AWS; to access the db use the following:
 
