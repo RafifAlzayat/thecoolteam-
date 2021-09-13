@@ -5,7 +5,7 @@
 
 Json Data info: 19 columns, 28,652,764 rows. 
 
-**Cleaned Covid Data CSV File**: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
+**Prepped CSV File**: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
 **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
