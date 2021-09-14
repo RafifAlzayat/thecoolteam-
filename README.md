@@ -110,8 +110,9 @@ https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Dat
 ## Dashboard
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. 
 
-### VA Covid Hospitalizations Dashboard 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
+
+### VA Covid Hospitalizations Dashboard 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Hospitalizations%20Dashboard.png)
 
 ### Covid by VA County Per Capita Dashboard
