@@ -69,13 +69,8 @@ Username: [ask rafif]
 
 Password: [ask rafif]
 
-**Rafif to add:** 
-✓ Database stores static data for use during the project 
-✓ Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model) 
-✓ Includes at least two tables (or collections, if using MongoDB) 
-✓ Includes at least one join using the database language (not including any joins in Pandas) 
-✓ Includes at least one connection string (using SQLAlchemy or PyMongo)
-Note: If you use a SQL database, you must provide your ERD with relationships.
+### ERD 
+✓ Rafif to add
 
 ### Preliminary Data Table Creation
 To create the preliminary table we used the following SQL:
