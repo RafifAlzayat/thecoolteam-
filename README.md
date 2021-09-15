@@ -40,20 +40,31 @@
 #### Process
   1. Import Libraries.
   2. Read csv file.
-  3. Split the data.
+  3. Split the data:
     * Using the train_test_split function from sklearn
   5. Create features and target.
-  6. Train the model.
+  6. Train the model:
     * Using the BalancedRandomForestClassifier from imblearn
   7. Confusion Matrix?
-  8. Print the imbalanced classification report
+  8. Print the imbalanced classification report:
     * image?
   10. List features in order of importance
-  11. Train the EasyEnsembleClassifier
+  11. Train the EasyEnsembleClassifier:
     * Using the EasyEnsembleClassifier from imblearn
-  13. Print the imbalanced classification report
+  13. Print the imbalanced classification report:
     * image?
 #### Results
+##### Top 10 Features
+  1. Age 65+
+  2. Age 18 - 49
+  3. Age 50 - 64
+  4. Age 0 - 17
+  5. New Haven
+  6. Tolland
+  7. Hartford
+  8. Male
+  9. Female
+  10. Black
 #### Benefits and Limitations
 
 ### Deep Learning for CT
@@ -72,20 +83,31 @@
 #### Process
   1. Import Libraries.
   2. Read csv file.
-  3. Split the data.
+  3. Split the data:
     * Using the train_test_split function from sklearn
   5. Create features and target.
-  6. Train the model.
+  6. Train the model:
     * Using the BalancedRandomForestClassifier from imblearn
   7. Confusion Matrix?
-  8. Print the imbalanced classification report
+  8. Print the imbalanced classification report:
     * image?
   10. List features in order of importance
-  11. Train the EasyEnsembleClassifier
+  11. Train the EasyEnsembleClassifier:
     * Using the EasyEnsembleClassifier from imblearn
-  13. Print the imbalanced classification report
+  13. Print the imbalanced classification report:
     * image?
 #### Results
+##### Top 10 Features
+  1. Age 65+
+  2. Age 18 - 49
+  3. Age 0 - 17
+  4. Age 50 - 64
+  5. Black
+  6. White
+  7. Male 
+  8. Female
+  9. Hispanic/Latino
+  10. Fairfax
 #### Benefits and Limitations
 
 ### Deep Learning for VA
