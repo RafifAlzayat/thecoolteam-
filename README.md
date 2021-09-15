@@ -10,15 +10,18 @@ Json Data info: 19 columns, 28,652,764 rows.
 
 **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
-## Data Topic and Overview
+## Data Overview
+
+### Data Topic
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
+### Data Exploration
 For the data exploration phase of our project, we first examined the null values in our data set. Then, we determined that even after getting rid of rows with null values, our dataset was still too large at ~7M rows to perform our machine learning models. From there, we decided to focus specifically on covid hopsitalizations in the state of Virginia. After filtering to only include Virginia data, we made pie charts for each of our factors to ensure that there was still a good distribution of data across all of the different factors. An example of a pie chart we created can be found below. 
-### Age Group Pie Chart
+#### Age Group Pie Chart
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Age%20Group%20Pie%20Chart.png)
 
+### Data Analysis
 **Ava to add:** 
-✓ Description of the data exploration phase of the project 
 ✓ Description of the analysis phase of the project
 
 ## Machine Learning Models
