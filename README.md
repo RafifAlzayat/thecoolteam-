@@ -43,7 +43,7 @@ We can use SVMs, decision trees, random forest, gradient boosted trees, and naiv
 ✓ Explanation of model choice, including limitations and benefits
   
 The diagram for the machine learning model is below: 
-  ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Machine%20Learning%20Model%20Diagram.jpg)
+  ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
   
  ## Database Information
  
