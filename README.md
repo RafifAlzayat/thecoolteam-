@@ -31,36 +31,42 @@
 
 ### Logistic Regression for CT
 #### Process
+#### Results
 #### Benefits and Limitations
 
 ### Random Forest for CT
   * File name: CT_2_CovidDataEnsemble.ipynb
 #### Process
-  1. Import Libraries
-  2. Read csv file
+  1. Import Libraries.
+  2. Read csv file.
   3. Split the data.
-  4. Create features and target
+  4. Create features and target.
   5. Train the model.
+#### Results
 #### Benefits and Limitations
 
 ### Deep Learning for CT
 #### Process
+#### Results
 #### Benefits and Limitations
 
 ### Logistic Regression for VA
 #### Process
+#### Results
 #### Benefits and Limitations
 
 ### Random Forest for VA
-  * File name: CT_2_CovidDataEnsemble.ipynb
+  * File name: 
 #### Process
-  1. Import Libraries
-  2. Read csv file
+  1. Import Libraries.
+  2. Read csv file.
   3. Split the data.
-  4. Create features and target
+  4. Create features and target.
   5. Train the model.
+#### Results
 #### Benefits and Limitations
 
 ### Deep Learning for VA
 #### Process
+#### Results
 #### Benefits and Limitations
