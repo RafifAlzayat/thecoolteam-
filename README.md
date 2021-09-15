@@ -27,7 +27,7 @@
   We can use SVMs, decision trees, random forest, GBT, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, multinomial logistic regression, and GBT to visualize regressions.
   
 
-## Machine Learning Maodels
+## Machine Learning Models
 
 ### Logistic Regression for CT
 #### Process
