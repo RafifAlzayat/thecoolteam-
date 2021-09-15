@@ -77,8 +77,8 @@ Password: [ask rafif]
 ✓ Includes at least one connection string (using SQLAlchemy or PyMongo)
 Note: If you use a SQL database, you must provide your ERD with relationships.
 
-### DATA TABLE CREATION
-To create the table we used the following SQL:
+### Preliminary Data Table Creation
+To create the preliminary table we used the following SQL:
 ```
 CREATE TABLE covid_data (
   case_month TEXT,
@@ -102,9 +102,8 @@ CREATE TABLE covid_data (
   underlying_conditions_yn TEXT
 );
 ```
-### DATA LOAD
 
-We load the data found here:
+We loaded the data found here:
 
 https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data
 
@@ -113,6 +112,21 @@ https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Dat
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/2.png)
 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/3.png)
+
+### Cleaned Data Export
+We wrote our full cleaned df including all U.S. states data from pyspark to our RDS, resulting in a "cleaned_covid_data" table in our RDS. 
+
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Cleaned%20Covid%20Data%20Table.png)
+
+### Join
+We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we did a full outer join based on the county name in each table to create a "joined_va_covid" table in our RD. 
+
+#### SQL Query for Join
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Join%20Query.png)
+
+#### Joined Table
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20VA%20Covid%20Table.png)
+
 
 ## Dashboard
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. 
