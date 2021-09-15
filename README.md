@@ -63,7 +63,7 @@ Port: 5432
 
 DB name: postgres
 
-Schema: finalProject
+Schema: Public
 
 Username: [ask rafif]
 
