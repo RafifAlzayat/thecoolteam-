@@ -6,9 +6,9 @@
   
   * Resident's state
   * Resident's county
-  * Age group ()
-  * Sex
-  * Race
+  * Age group (0 - 17, 18 - 49, 50 - 64, 64+)
+  * Sex (Female, Male)
+  * Race (American Indian/Alaska Native, Asian, Black, Multiple/Other, Native Hawaiian/Other Pacific Islander, White)
   * Ethnicity
 
   Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
@@ -30,6 +30,7 @@
 ## Machine Learning Models
 
 ### Logistic Regression for CT
+  * File name: CT_1_CovidDataResampling.ipynb
 #### Process
 #### Results
 #### Benefits and Limitations
@@ -51,12 +52,13 @@
 #### Benefits and Limitations
 
 ### Logistic Regression for VA
+   * File name: VA_1_CovidDataResmapling.ipynb
 #### Process
 #### Results
 #### Benefits and Limitations
 
 ### Random Forest for VA
-  * File name: 
+  * File name: VA_2_CovidDataEnsemble.ipynb
 #### Process
   1. Import Libraries.
   2. Read csv file.
