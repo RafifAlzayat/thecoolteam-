@@ -9,7 +9,7 @@
   * Age group (0 - 17, 18 - 49, 50 - 64, 64+)
   * Sex (Female, Male)
   * Race (American Indian/Alaska Native, Asian, Black, Multiple/Other, Native Hawaiian/Other Pacific Islander, White)
-  * Ethnicity
+  * Ethnicity (Hispanic/Latino, Non-Hispanic/Latino)
 
   Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
   
@@ -41,8 +41,18 @@
   1. Import Libraries.
   2. Read csv file.
   3. Split the data.
-  4. Create features and target.
-  5. Train the model.
+    * Using the train_test_split function from sklearn
+  5. Create features and target.
+  6. Train the model.
+    * Using the BalancedRandomForestClassifier from imblearn
+  7. Confusion Matrix?
+  8. Print the imbalanced classification report
+    * image?
+  10. List features in order of importance
+  11. Train the EasyEnsembleClassifier
+    * Using the EasyEnsembleClassifier from imblearn
+  13. Print the imbalanced classification report
+    * image?
 #### Results
 #### Benefits and Limitations
 
@@ -63,8 +73,18 @@
   1. Import Libraries.
   2. Read csv file.
   3. Split the data.
-  4. Create features and target.
-  5. Train the model.
+    * Using the train_test_split function from sklearn
+  5. Create features and target.
+  6. Train the model.
+    * Using the BalancedRandomForestClassifier from imblearn
+  7. Confusion Matrix?
+  8. Print the imbalanced classification report
+    * image?
+  10. List features in order of importance
+  11. Train the EasyEnsembleClassifier
+    * Using the EasyEnsembleClassifier from imblearn
+  13. Print the imbalanced classification report
+    * image?
 #### Results
 #### Benefits and Limitations
 
