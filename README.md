@@ -15,13 +15,13 @@ Description of how data was split into training and testing sets
 Explanation of model choice, including limitations and benefits
 Models: 
 
-BalancedRandomForestClassifier
-EasyEnsembleClassifier
-LogisticRegression
-DecisionTreeClassifier
-GradientBoostingClassifier
-RandomOverSampler
-SMOTE
+- BalancedRandomForestClassifier
+- EasyEnsembleClassifier
+- LogisticRegression
+- DecisionTreeClassifier
+- GradientBoostingClassifier
+- RandomOverSampler
+- SMOTE
 
 
 
