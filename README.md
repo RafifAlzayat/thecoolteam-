@@ -15,14 +15,11 @@ Json Data info: 19 columns, 28,652,764 rows.
 ### Data Topic
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
-### Data Exploration
-For the data exploration phase of our project, we first examined the null values in our data set. Then, we determined that even after getting rid of rows with null values, our dataset was still too large at ~7M rows to perform our machine learning models. From there, we decided to focus specifically on covid hopsitalizations in the state of Virginia. After filtering to only include Virginia data, we made pie charts for each of our factors to ensure that there was still a good distribution of data across all of the different factors. An example of a pie chart we created can be found below. 
+### Data Exploration/Analysis
+For the data exploration and analysis phase of our project, we first examined the null values in our data set. Then, we determined that even after getting rid of rows with null values, our dataset was still too large at ~7M rows to perform our machine learning models. From there, we decided to focus specifically on covid hopsitalizations in the state of Virginia. After filtering to only include Virginia data, we made pie charts for each of our factors to ensure that there was still a good distribution of data across all of the different factors. An example of a pie chart we created can be found below. 
 #### Age Group Pie Chart
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Age%20Group%20Pie%20Chart.png)
 
-### Data Analysis
-**Ava to add:** 
-✓ Description of the analysis phase of the project
 
 ## Machine Learning Models
 
@@ -70,43 +67,10 @@ Username: [ask rafif]
 Password: [ask rafif]
 
 ### ERD 
-✓ Rafif to add
+Below is the ERD for our database: 
 
-### Preliminary Data Table Creation
-To create the preliminary table we used the following SQL:
-```
-CREATE TABLE covid_data (
-  case_month TEXT,
-  res_state TEXT,
-  state_fips_code TEXT,
-  res_county TEXT,
-  county_fips_code TEXT,
-  age_group TEXT,
-  sex TEXT,
-  race TEXT,
-  ethnicity TEXT,
-  case_positive_specimen_interval TEXT,
-  case_onset_interval TEXT,
-  process TEXT,
-  exposure_yn TEXT,
-  current_status TEXT,
-  symptom_status TEXT,
-  hosp_yn TEXT,
-  icu_yn TEXT,
-  death_yn TEXT,
-  underlying_conditions_yn TEXT
-);
-```
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/ERD.png)
 
-We loaded the data found here:
-
-https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/1.png)
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/2.png)
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/3.png)
 
 ### Cleaned Data Export
 We wrote our full cleaned df including all U.S. states data from pyspark to our RDS, resulting in a "cleaned_covid_data" table in our RDS. 
@@ -114,13 +78,11 @@ We wrote our full cleaned df including all U.S. states data from pyspark to our 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Cleaned%20Covid%20Data%20Table.png)
 
 ### Join
-We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we did a full outer join based on the county name in each table to create a "joined_va_covid" table in our RD. 
+We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we used SGLAlchemy to join the two tables together. 
 
-#### SQL Query for Join
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Join%20Query.png)
 
 #### Joined Table
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20VA%20Covid%20Table.png)
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20Table.png)
 
 
 ## Dashboard
