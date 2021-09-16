@@ -28,22 +28,26 @@ For the data exploration and analysis phase of our project, we first examined th
 ## Machine Learning Models
 Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
 
-Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
-  
-  * Linear Least Squares
-  * Ridge Regression
-  * Lasso
-  * Multinomial Logistic Regression
-  * Linear Support Vector Machines (SVMs)
-  * Random Forest
-  * Gradient-Boosted Tree (GBT)
-  * One vs. Rest
-  * Naive Bayes
-  * Factorization Machine Classifier
+### On Machine Learning
+The data was in JSON format directly from the CDC website and we loaded the raw data into an AWS RDS which allowed us to make a preliminary dataset using postgres in pgAdmin. The data was then loaded into a csv file using an S3 bucket which can then be loaded into pyspark for cleaning. The data was cleaned to drop null values as well as columns that weren’t essential. The cleaned table data included variables from every state in the United States which we could draw from if we wished to split off into different states. The decision was made to split the dataset further into individual states for a more efficient machine learning process, so the sample state of Virginia was selected. The data was split with a target of “hosp_yn” which was the column that detailed if the patient went to the hospital. A dummy dataset was created without  “hosp_yn” which allowed us to split the data into training and testing sets. The models we decided to use were: 
 
-We will create each one of these models with our COVID-19 data, and tweak the parameters to test for under fitting or over fitting, to figure out which models and at what parameters are best for visualizing certain conclusions about the data. All of our models will be supervized machine learning models.
-  
-We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
+- BalancedRandomForestClassifier
+  - The BalancedRandomForestClassifier has a balanced accuracy score of 78%
+- EasyEnsembleClassifier
+  -   The Easy Ensemble AdaBoost Classifier has a balanced accuracy score of 75%
+- LogisticRegression
+  -   The LogisticRegression has a balanced accuracy score of 75%
+- DecisionTreeClassifier
+  -   The DecisionTreeClassifier has a balanced accuracy score of 93%
+- GradientBoostingClassifier
+  -   The GradientBoostingClassifier has a balanced accuracy score of 93%
+- RandomOverSampler
+  -   The RandomOverSampler has a balanced accuracy score of just over 75% 
+- SMOTE
+  -   The SMOTE Oversampling has a balanced accuracy score of 75% 
+#### Summary
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which far surpass the other machine learning methods. 
+
 
 **Ryan/Alan to add:** 
 ✓ Description of preliminary data preprocessing 
