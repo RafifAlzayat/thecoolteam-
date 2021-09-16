@@ -8,6 +8,24 @@ Json Data info: 19 columns, 28,652,764 rows.
 
 ## Overview and Timeline of Project
 
+### Write up on the Machine Learning
+Description of preliminary data preprocessing
+Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
+Description of how data was split into training and testing sets
+Explanation of model choice, including limitations and benefits
+Models: 
+
+BalancedRandomForestClassifier
+EasyEnsembleClassifier
+LogisticRegression
+DecisionTreeClassifier
+GradientBoostingClassifier
+RandomOverSampler
+SMOTE
+
+
+
+
 ### Update 09/13/2021
 We as a group have pivoted to separating the data even further by state as this will give us the necessary leeway to run the data in pandas for the supervised machine learning portion. Separating the data by state also accomplishes much in respect to the data exploratory phase as we will need to figure out what the data means and how to utilize the joins table we have from Ryan's branch. I have successfully imported the Logistic Regression models of RandomOverSampler and SMOTE in the resampling files. BalancedRandomForestClassifier and EasyEnsembleClassifier are in the CovidDataEnsemble data file. Both states are separated by their abbreviation names on the files VA and CT. 
 
