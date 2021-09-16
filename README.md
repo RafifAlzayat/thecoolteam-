@@ -27,6 +27,7 @@ For the data exploration and analysis phase of our project, we first examined th
 
 ## Machine Learning Models
 Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
+
 Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
   
   * Linear Least Squares
@@ -55,6 +56,7 @@ The diagram for the machine learning model is below:
   
  ## Database Information
 Data Prep/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
+
 ### AWS DB
 We are using a postgresql on AWS; to access the db use the following:
 
