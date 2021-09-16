@@ -9,10 +9,10 @@ Json Data info: 19 columns, 28,652,764 rows.
 ## Overview and Timeline of Project
 
 ### Write up on the Machine Learning
-Description of preliminary data preprocessing
-Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
-Description of how data was split into training and testing sets
-Explanation of model choice, including limitations and benefits
+#### Description of preliminary data preprocessing
+#### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
+#### Description of how data was split into training and testing sets
+#### Explanation of model choice, including limitations and benefits
 Models: 
 
 - BalancedRandomForestClassifier
