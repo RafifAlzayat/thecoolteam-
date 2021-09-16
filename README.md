@@ -25,8 +25,8 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
   -   The RandomOverSampler has a balanced accuracy score of just over 75% 
 - SMOTE
   -   The SMOTE Oversampling has a balanced accuracy score of 75% 
-
-
+#### Summary
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which far surpass the other machine learning methods. 
 
 
 ### Update 09/13/2021
