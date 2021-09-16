@@ -16,13 +16,15 @@ Json Data info: 19 columns, 28,652,764 rows.
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
 
 ### Data Exploration/Analysis
+Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
+Data Exploration Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Data_Exploration.ipynb
 For the data exploration and analysis phase of our project, we first examined the null values in our data set. Then, we determined that even after getting rid of rows with null values, our dataset was still too large at ~7M rows to perform our machine learning models. From there, we decided to focus specifically on covid hopsitalizations in the state of Virginia. After filtering to only include Virginia data, we made pie charts for each of our factors to ensure that there was still a good distribution of data across all of the different factors. An example of a pie chart we created can be found below. 
 #### Age Group Pie Chart
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Age%20Group%20Pie%20Chart.png)
 
 
 ## Machine Learning Models
-
+Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
 Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
   
   * Linear Least Squares
@@ -50,7 +52,7 @@ The diagram for the machine learning model is below:
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
   
  ## Database Information
- 
+Data Prep/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
 ### AWS DB
 We are using a postgresql on AWS; to access the db use the following:
 
@@ -86,7 +88,7 @@ We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid
 
 
 ## Dashboard
-The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. 
+The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
 
