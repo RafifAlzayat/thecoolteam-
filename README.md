@@ -47,13 +47,6 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
   -   The SMOTE Oversampling has a balanced accuracy score of 75% 
 #### Summary
 Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which far surpass the other machine learning methods. 
-
-
-**Ryan/Alan to add:** 
-✓ Description of preliminary data preprocessing 
-✓ Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
-✓ Description of how data was split into training and testing sets 
-✓ Explanation of model choice, including limitations and benefits
   
 The diagram for the machine learning model is below: 
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
