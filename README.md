@@ -14,17 +14,17 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 - BalancedRandomForestClassifier
   - The BalancedRandomForestClassifier has a balanced accuracy score of 78%
 - EasyEnsembleClassifier
--   The Easy Ensemble AdaBoost Classifier has a balanced accuracy score of 75%
+  -   The Easy Ensemble AdaBoost Classifier has a balanced accuracy score of 75%
 - LogisticRegression
--   The LogisticRegression has a balanced accuracy score of 75%
+  -   The LogisticRegression has a balanced accuracy score of 75%
 - DecisionTreeClassifier
--   The DecisionTreeClassifier has a balanced accuracy score of 93%
+  -   The DecisionTreeClassifier has a balanced accuracy score of 93%
 - GradientBoostingClassifier
--   The GradientBoostingClassifier has a balanced accuracy score of 93%
+  -   The GradientBoostingClassifier has a balanced accuracy score of 93%
 - RandomOverSampler
--   The RandomOverSampler has a balanced accuracy score of just over 75% 
+  -   The RandomOverSampler has a balanced accuracy score of just over 75% 
 - SMOTE
--   The SMOTE Oversampling has a balanced accuracy score of 75% 
+  -   The SMOTE Oversampling has a balanced accuracy score of 75% 
 
 
 
