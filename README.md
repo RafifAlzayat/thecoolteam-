@@ -32,6 +32,16 @@
 ### Logistic Regression, RandomOverSampler, and SMOTE for CT
   * File name: CT_1_CovidDataResampling.ipynb
 #### Process
+  1. Import Libraries.
+  2. Read csv file.
+  3. Split the data using the train_test_split function from sklearn.
+  4. Create features and target.
+  5. Run the model using LogisticRegression from sklearn.
+  6. Create a confusion matrix and imbalanced classification report to check accuracy.
+  7. Run the RandomOverSampler model using RandomOverSampler from sklearn.
+  8. Create a confusion matrix and imbalanced classification report to check accuracy.
+  9. Run the SMOTE model using SMOTE from sklearn.
+  8. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 #### Benefits and Limitations
 
@@ -40,16 +50,13 @@
 #### Process
   1. Import Libraries.
   2. Read csv file.
-  3. Split the data:
-    * Using the train_test_split function from sklearn
-  5. Create features and target.
-  6. Train the model:
-    * Using the BalancedRandomForestClassifier from imblearn
-  7. Create a confusion matrix imbalanced classification report to check accuracy.
-  8. List features in order of importance
-  9. Train the EasyEnsembleClassifier:
-    * Using the EasyEnsembleClassifier from imblearn
-  10.Create a confusion matrix imbalanced classification report to check accuracy.
+  3. Split the data using the train_test_split function from sklearn.
+  4. Create features and target.
+  5. Run the model using the BalancedRandomForestClassifier from imblearn.
+  6. Create a confusion matrix and imbalanced classification report to check accuracy.
+  7. List features in order of importance.
+  8. Run the EasyEnsembleClassifier model using EasyEnsembleClassifier from imblearn.
+  9. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 ##### Top 10 Features
   1. Age 65+
@@ -72,6 +79,32 @@
 ### LogisticRegression, RandomOverSampler, and SMOTE for VA
    * File name: VA_1_CovidDataResmapling.ipynb
 #### Process
+  1. Import Libraries.
+  2. Read csv file.
+  3. Split the data using the train_test_split function from sklearn.
+  4. Create features and target.
+  5. Run the model using LogisticRegression from sklearn.
+  6. Create a confusion matrix and imbalanced classification report to check accuracy.
+  7. Run the RandomOverSampler model using RandomOverSampler from sklearn.
+  8. Create a confusion matrix and imbalanced classification report to check accuracy.
+  9. Run the SMOTE model using SMOTE from sklearn.
+  8. Create a confusion matrix and imbalanced classification report to check accuracy.
+#### Results
+#### Benefits and Limitations
+
+### SVM, DecisionTreeClassifier, and GradientBoostingClassifier for VA
+   * File name: Covid_Machine_Learning.ipynb
+#### Process
+  1. Import Libraries.
+  2. Read csv file.
+  3. Split the data using the train_test_split function from sklearn.
+  4. Create features and target.
+  5. Run the model using the SVC from sklearn.
+  6. Create a confusion matrix and imbalanced classification report to check accuracy.
+  7. Run the DecisionTreeClassifier model using the tree from sklearn.
+  8. Create a confusion matrix and imbalanced classification report to check accuracy. 
+  9. Run the Gradient-Boosted Tree model using GradientBoostingClassifier from sklearn.
+  10. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 #### Benefits and Limitations
 
@@ -80,16 +113,13 @@
 #### Process
   1. Import Libraries.
   2. Read csv file.
-  3. Split the data:
-    * Using the train_test_split function from sklearn
-  5. Create features and target.
-  6. Train the model:
-    * Using the BalancedRandomForestClassifier from imblearn
-  7. Create a confusion matrix imbalanced classification report to check accuracy.
-  8. List features in order of importance
-  9. Train the EasyEnsembleClassifier:
-    * Using the EasyEnsembleClassifier from imblearn
-  10.Create a confusion matrix imbalanced classification report to check accuracy.
+  3. Split the data using the train_test_split function from sklearn.
+  4. Create features and target.
+  5. Run the model using the BalancedRandomForestClassifier from imblearn.
+  6. Create a confusion matrix and imbalanced classification report to check accuracy.
+  7. List features in order of importance.
+  8. Run the EasyEnsembleClassifier model using EasyEnsembleClassifier from imblearn.
+  9. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 ##### Top 10 Features
   1. Age 65+
