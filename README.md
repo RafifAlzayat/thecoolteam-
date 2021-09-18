@@ -13,13 +13,13 @@
 
   Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
   
-  * Multinomial Logistic Regression
-  * Linear Support Vector Machines (SVMs)?
-  * Random Forest
-  * Gradient-Boosted Tree (GBT)?
-  * One vs. Rest?
-  * Naive Bayes?
-  * Factorization Machine Classifier?
+  * BalancedRandomForestClassifier
+  * EasyEnsembleClassifier
+  * LogisticRegression
+  * GradientBoostingClassifier
+  * DecisionTreeClassifier
+  * RandomOverSampler
+  * SMOTE
   * Deep Learning
 
   We will create each one of these models with our COVID-19 data, and tweak the parameters to test for under fitting or over fitting, to figure out which models and at what parameters are best for visualizing certain conclusions about the data. We will be using supervised machine learning models and a deep learning model
@@ -29,13 +29,13 @@
 
 ## Machine Learning Models
 
-### Logistic Regression for CT
+### Logistic Regression, RandomOverSampler, and SMOTE for CT
   * File name: CT_1_CovidDataResampling.ipynb
 #### Process
 #### Results
 #### Benefits and Limitations
 
-### Random Forest for CT
+### BalancedRandomForestClassifier and EasyEnsembleClassifier for CT
   * File name: CT_2_CovidDataEnsemble.ipynb
 #### Process
   1. Import Libraries.
@@ -45,14 +45,11 @@
   5. Create features and target.
   6. Train the model:
     * Using the BalancedRandomForestClassifier from imblearn
-  7. Confusion Matrix?
-  8. Print the imbalanced classification report:
-    * image?
-  10. List features in order of importance
-  11. Train the EasyEnsembleClassifier:
+  7. Create a confusion matrix imbalanced classification report to check accuracy.
+  8. List features in order of importance
+  9. Train the EasyEnsembleClassifier:
     * Using the EasyEnsembleClassifier from imblearn
-  13. Print the imbalanced classification report:
-    * image?
+  10.Create a confusion matrix imbalanced classification report to check accuracy.
 #### Results
 ##### Top 10 Features
   1. Age 65+
@@ -72,13 +69,13 @@
 #### Results
 #### Benefits and Limitations
 
-### Logistic Regression for VA
+### LogisticRegression, RandomOverSampler, and SMOTE for VA
    * File name: VA_1_CovidDataResmapling.ipynb
 #### Process
 #### Results
 #### Benefits and Limitations
 
-### Random Forest for VA
+### BalancedRandomForestClassifier and EasyEnsembleClassifier for VA
   * File name: VA_2_CovidDataEnsemble.ipynb
 #### Process
   1. Import Libraries.
@@ -88,14 +85,11 @@
   5. Create features and target.
   6. Train the model:
     * Using the BalancedRandomForestClassifier from imblearn
-  7. Confusion Matrix?
-  8. Print the imbalanced classification report:
-    * image?
-  10. List features in order of importance
-  11. Train the EasyEnsembleClassifier:
+  7. Create a confusion matrix imbalanced classification report to check accuracy.
+  8. List features in order of importance
+  9. Train the EasyEnsembleClassifier:
     * Using the EasyEnsembleClassifier from imblearn
-  13. Print the imbalanced classification report:
-    * image?
+  10.Create a confusion matrix imbalanced classification report to check accuracy.
 #### Results
 ##### Top 10 Features
   1. Age 65+
