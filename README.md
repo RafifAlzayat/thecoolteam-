@@ -81,7 +81,7 @@ We wrote our full cleaned df including all U.S. states data from pyspark to our 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Cleaned%20Covid%20Data%20Table.png)
 
 ### Join
-We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we used SGLAlchemy to join the two tables together. 
+We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we used SQLAlchemy to join the two tables together. 
 
 
 #### Joined Table
