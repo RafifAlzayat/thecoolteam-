@@ -88,7 +88,7 @@ We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20Table.png)
 
 ## Dashboard
-The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
+The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
 
