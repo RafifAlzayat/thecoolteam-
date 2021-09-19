@@ -70,7 +70,7 @@
   9. Female
   10. Black
 #### Benefits and Limitations
-
+  BalancedRandomForestClassifier and EasyEnsembleClassifier are work well with our dataset because they are good models to use for classification variables. The down side is how much computing power they use.
 ### Deep Learning for CT
 #### Process
 #### Results
@@ -91,7 +91,7 @@
   8. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 #### Benefits and Limitations
-
+  Logistic Regression is less likely to over-fitted but it assumes some linearity that our data may or may not have.
 ### SVM, DecisionTreeClassifier, and GradientBoostingClassifier for VA
    * File name: Covid_Machine_Learning.ipynb
 #### Process
@@ -107,7 +107,7 @@
   10. Create a confusion matrix and imbalanced classification report to check accuracy.
 #### Results
 #### Benefits and Limitations
-
+  DecisionTreeClassifier and GradientBoostingClassifier are work well with our dataset because they are good models to use for classification variables, which is shown by the fact that these two models preformed the best with our data. The down side is how much computing power they use. The down of SVM for our dataset is that there is no clear margin of seperation between classes.
 ### BalancedRandomForestClassifier and EasyEnsembleClassifier for VA
   * File name: VA_2_CovidDataEnsemble.ipynb
 #### Process
@@ -133,7 +133,7 @@
   9. Hispanic/Latino
   10. Fairfax
 #### Benefits and Limitations
-
+  BalancedRandomForestClassifier and EasyEnsembleClassifier are work well with our dataset because they are good models to use for classification variables. The down side is how much computing power they use.
 ### Deep Learning for VA
 #### Process
 #### Results
