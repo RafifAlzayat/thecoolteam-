@@ -1,46 +1,58 @@
 # Covid Analysis
 
 ### Resources
-**Source of Data** : https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://data.cdc.gov/resource/n8mc-b4w4.json, https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://rafifcoviddata.s3.amazonaws.com/COVID-19_Case_Surveillance_Public_Use_Data_with_Geography.csv
+**Raw Data Source** : https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://data.cdc.gov/resource/n8mc-b4w4.json, https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://rafifcoviddata.s3.amazonaws.com/COVID-19_Case_Surveillance_Public_Use_Data_with_Geography.csv
 
 Json Data info: 19 columns, 28,652,764 rows. 
 
-### 9/3 Update
-Built upon the code that Alan created for the data processing. Specifically, I added back in the ethnicity column to our dataframe and instead took out the symptom and underlying conditions columns. This ended up leaving us with 6,952,336 rows of data instead of the 972,599 rows that were left when the data included the symptom and underlying conditions columns and then dropped the "NA" values from those columns. Therefore, this tells us that the underlying conditions and symptom columns have a lot of null values, and therefore would not be worth including in our analysis. 
+**Prepped CSV File**: https://rafifcoviddata.s3.amazonaws.com/cleaned_covid_data.csv
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-csvfile/resources/cleaned_data_sample.png)
 
-### Update 09/01/2021
-The database was pulled from the cdc website onto an rds and converted from json format to a dataframe using SQL, the SQL dataframe was then refactored into a cvs format and put again onto a s3 bucket to put onto pyspark. 
-Through pyspark the preliminary dataframe was created after dropping unneccacry columns and taking out rows that had Missing, Unknown, NA, or null values. This left the dataframe with 8 columns and 972599 rows as oppsoed to the orginal 19 columns and 28,652,764 rows.
+**Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
+## Data Overview
 
+### Data Topic
+Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. After our data exploration, the team decided to decrease the size of the database and only analyze covid cases in the state of Virginia. 
 
-## Data Topic and Overview
-Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. 
+### Data Exploration/Analysis
+Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
+
+Data Exploration Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Data_Exploration.ipynb
+
+For the data exploration and analysis phase of our project, we first examined the null values in our data set. Then, we determined that even after getting rid of rows with null values, our dataset was still too large at ~7M rows to perform our machine learning models. From there, we decided to focus specifically on covid hopsitalizations in the state of Virginia. After filtering to only include Virginia data, we made pie charts for each of our factors to ensure that there was still a good distribution of data across all of the different factors. An example of a pie chart we created can be found below. 
+#### Age Group Pie Chart
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Age%20Group%20Pie%20Chart.png)
+
 
 ## Machine Learning Models
+Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
 
-  Because all of our data is either ordinal or classificatin data we will have to change our data into numbers via dummy variables. We can use the following models and see which model like best or which models are better for visualizing different conclusions:
-  
-  * Linear Least Squares
-  * Ridge Regression
-  * Lasso
-  * Multinomial Logistic Regression
-  * Linear Support Vector Machines (SVMs)
-  * Random Forest
-  * Gradient-Boosted Tree (GBT)
-  * One vs. Rest
-  * Naive Bayes
-  * Factorization Machine Classifier
+### On Machine Learning
+The data was in JSON format directly from the CDC website and we loaded the raw data into an AWS RDS which allowed us to make a preliminary dataset using postgres in pgAdmin. The data was then loaded into a csv file using an S3 bucket which can then be loaded into pyspark for cleaning. The data was cleaned to drop null values as well as columns that weren’t essential. The cleaned table data included variables from every state in the United States which we could draw from if we wished to split off into different states. The decision was made to split the dataset further into individual states for a more efficient machine learning process, so the sample state of Virginia was selected. The data was split with a target of “hosp_yn” which was the column that detailed if the patient went to the hospital. A dummy dataset was created without  “hosp_yn” which allowed us to split the data into training and testing sets. The models we decided to use were: 
 
-  We will create each one of these models with our COVID-19 data, and tweak the parameters to test for under fitting or over fitting, to figure out which models and at what parameters are best for visualizing certain conclusions about the data. All of our models will be supervized machine learning models.
+- BalancedRandomForestClassifier
+  - The BalancedRandomForestClassifier has a balanced accuracy score of 78%
+- EasyEnsembleClassifier
+  -   The Easy Ensemble AdaBoost Classifier has a balanced accuracy score of 75%
+- LogisticRegression
+  -   The LogisticRegression has a balanced accuracy score of 75%
+- DecisionTreeClassifier
+  -   The DecisionTreeClassifier has a balanced accuracy score of 93%
+- GradientBoostingClassifier
+  -   The GradientBoostingClassifier has a balanced accuracy score of 93%
+- RandomOverSampler
+  -   The RandomOverSampler has a balanced accuracy score of just over 75% 
+- SMOTE
+  -   The SMOTE Oversampling has a balanced accuracy score of 75% 
+#### Summary
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which far surpass the other machine learning methods. 
   
-  We can use SVMs, decision trees, random forest, gradient boosted trees, and naive Bayes models to solve binary problems like who is likely to contract COVID-19. We can use decision trees, random forest, and naive Bayes multiclass classification problems. We can use decision trees, random forest, linear least squares, ridge regression, Lasso, multinomial logistic regression, and GBT to visualize regressions.
-  
-  The diagram for the machine learning model is below: 
-  ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Machine%20Learning%20Model%20Diagram.jpg)
+The diagram for the machine learning model is below: 
+  ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
   
  ## Database Information
- 
+Data Prep/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
 
 ### AWS DB
 We are using a postgresql on AWS; to access the db use the following:
@@ -51,51 +63,40 @@ Port: 5432
 
 DB name: postgres
 
-Schema: finalProject
+Schema: Public
 
 Username: [ask rafif]
 
 Password: [ask rafif]
 
-### DATA TABLE CREATION
-To create the table we used the following SQL:
-```
-CREATE TABLE covid_data (
-  case_month TEXT,
-  res_state TEXT,
-  state_fips_code TEXT,
-  res_county TEXT,
-  county_fips_code TEXT,
-  age_group TEXT,
-  sex TEXT,
-  race TEXT,
-  ethnicity TEXT,
-  case_positive_specimen_interval TEXT,
-  case_onset_interval TEXT,
-  process TEXT,
-  exposure_yn TEXT,
-  current_status TEXT,
-  symptom_status TEXT,
-  hosp_yn TEXT,
-  icu_yn TEXT,
-  death_yn TEXT,
-  underlying_conditions_yn TEXT
-);
-```
-### DATA LOAD
+### ERD 
+Below is the ERD for our database: 
 
-We load the data found here:
-
-https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/1.png)
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/2.png)
-
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/rafif-branch/resources/3.png)
-
-## Cleaned Covid Data CSV File
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/ERD.png)
 
 
-  
+### Cleaned Data Export
+We wrote our full cleaned df including all U.S. states data from pyspark to our RDS, resulting in a "cleaned_covid_data" table in our RDS. 
+
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Cleaned%20Covid%20Data%20Table.png)
+
+### Join
+We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid_data" table in our RDS. We did the same thing for our VA county population dataset, resulting in a "county_population" table in our RDS. From there, we used SGLAlchemy to join the two tables together. 
+
+
+#### Joined Table
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20Table.png)
+
+
+## Dashboard
+The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: **Google Slides Link:** https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
+
+Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
+
+### VA Covid Hospitalizations Dashboard 
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Hospitalizations%20Dashboard.png)
+
+### Covid by VA County Per Capita Dashboard
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
+
 
