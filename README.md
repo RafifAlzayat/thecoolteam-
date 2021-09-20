@@ -15,7 +15,7 @@ Json Data info: 19 columns, 28,652,764 rows.
 ### Data Topic
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. After our data exploration, the team decided to decrease the size of the database and only analyze covid cases in the state of Virginia. 
 
-To add: 
+Ryan To add: 
 ✓ Technologies, languages, tools, and algorithms used throughout the project 
 ✓ Result of analysis 
 ✓ Recommendation for future analysis ✓ Anything the team would have done differently
@@ -35,7 +35,7 @@ Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/m
 
 ### On Machine Learning
 
-To add: 
+Alan To add: 
 ✓ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
 ✓ Description of how model was trained (or retrained, if they are using an
 existing model) 
@@ -102,7 +102,7 @@ We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20Table.png)
 
 ## Dashboard
-To add: ✓ Data (images or report) from the machine learning task 
+Ava To add: ✓ Data (images or report) from the machine learning task 
 
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
