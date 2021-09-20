@@ -15,6 +15,11 @@ Json Data info: 19 columns, 28,652,764 rows.
 ### Data Topic
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. After our data exploration, the team decided to decrease the size of the database and only analyze covid cases in the state of Virginia. 
 
+To add: 
+✓ Technologies, languages, tools, and algorithms used throughout the project 
+✓ Result of analysis 
+✓ Recommendation for future analysis ✓ Anything the team would have done differently
+
 ### Data Exploration/Analysis
 Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
 
@@ -29,6 +34,15 @@ For the data exploration and analysis phase of our project, we first examined th
 Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
 
 ### On Machine Learning
+
+To add: 
+✓ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
+✓ Description of how model was trained (or retrained, if they are using an
+existing model) 
+✓ Description and explanation of model’s confusion matrix, including final
+accuracy score 
+
+
 The data was in JSON format directly from the CDC website and we loaded the raw data into an AWS RDS which allowed us to make a preliminary dataset using postgres in pgAdmin. The data was then loaded into a csv file using an S3 bucket which can then be loaded into pyspark for cleaning. The data was cleaned to drop null values as well as columns that weren’t essential. The cleaned table data included variables from every state in the United States which we could draw from if we wished to split off into different states. The decision was made to split the dataset further into individual states for a more efficient machine learning process, so the sample state of Virginia was selected. The data was split with a target of “hosp_yn” which was the column that detailed if the patient went to the hospital. A dummy dataset was created without  “hosp_yn” which allowed us to split the data into training and testing sets. The models we decided to use were: 
 
 - BalancedRandomForestClassifier
@@ -88,6 +102,8 @@ We wrote our virginia df from pyspark to our RDS, resulting in a "virginia_covid
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Joined%20Table.png)
 
 ## Dashboard
+To add: ✓ Data (images or report) from the machine learning task 
+
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
 Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
