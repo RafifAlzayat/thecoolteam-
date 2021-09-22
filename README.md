@@ -66,11 +66,8 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 - SMOTE
   -   The SMOTE Oversampling has a balanced accuracy score of 75% 
 
-##### Decision Tree Classifier
-![DecisionTreeClassfier](https://user-images.githubusercontent.com/82983000/134433027-51ddcd88-39e4-490d-83b1-ee3da88c6aa0.png)
-
-##### GradientBoostingClassifier
-![GradientBoostingClassfier](https://user-images.githubusercontent.com/82983000/134433092-ad85d861-a293-429f-84c1-3317ceb76c33.png)
+### Machine Learning Dashboard
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
 
 #### Summary
 Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%.
@@ -126,5 +123,4 @@ Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VAC
 ### Covid by VA County Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
 
-### Machine Learning Dashboard
-![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
+
