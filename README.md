@@ -17,7 +17,6 @@ Our team has chosen to analyze covid data from the CDC. We selected this data du
 
 Ryan To add: 
 ✓ Technologies, languages, tools, and algorithms used throughout the project 
-✓ Result of analysis 
 ✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
 ### Data Exploration/Analysis
