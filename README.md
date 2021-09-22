@@ -117,4 +117,5 @@ Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VAC
 ### Covid by VA County Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
 
-
+### Machine Learning Dashboard
+![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
