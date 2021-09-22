@@ -50,6 +50,8 @@ project.
 
 The data was in JSON format directly from the CDC website and we loaded the raw data into an AWS RDS which allowed us to make a preliminary dataset using postgres in pgAdmin. The data was then loaded into a csv file using an S3 bucket which can then be loaded into pyspark for cleaning. The data was cleaned to drop null values as well as columns that weren’t essential. The cleaned table data included variables from every state in the United States which we could draw from if we wished to split off into different states. The decision was made to split the dataset further into individual states for a more efficient machine learning process, so the sample state of Virginia was selected. The data was split with a target of “hosp_yn” which was the column that detailed if the patient went to the hospital. A dummy dataset was created without  “hosp_yn” which allowed us to split the data into training and testing sets. The models we decided to use were: 
 
+- Support Vector Machine
+  - The SVM has a balanced accuracy score of 93.14%
 - BalancedRandomForestClassifier
   - The BalancedRandomForestClassifier has a balanced accuracy score of 78%
 - EasyEnsembleClassifier
@@ -72,7 +74,7 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 ![GradientBoostingClassfier](https://user-images.githubusercontent.com/82983000/134433092-ad85d861-a293-429f-84c1-3317ceb76c33.png)
 
 #### Summary
-Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which far surpass the other machine learning methods. 
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%.
   
 The diagram for the machine learning model is below: 
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
