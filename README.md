@@ -109,7 +109,7 @@ Ava To add: ✓ Data (images or report) from the machine learning task
 
 The dashboards created so far used Tableau public as the visualization tool. The interactive elements include real time filters to slice and update the visualizations to show covid data based on sex, race, ethnicity, age group, etc. Draft storyboard for full dashboard can be found on our google slides here: https://docs.google.com/presentation/d/16uZDT7L-L3IMNzPAzESrh303vs9Um8ul3L3JFFOzpnk/edit?usp=sharing
 
-Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/CovidHospitalizationAnalysis/Hospitalizations?publish=yes
+Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VACovidHospitalizationAnalysis/CovidMachineLearning?publish=yes
 
 ### VA Covid Hospitalizations Dashboard 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Hospitalizations%20Dashboard.png)
