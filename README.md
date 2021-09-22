@@ -41,7 +41,9 @@ Alan To add:
 existing model) 
 ✓ Description and explanation of model’s confusion matrix, including final
 accuracy score 
-Note: If statistical analysis is not included as part of the current analysis,
+
+
+Ryan to add: Note: If statistical analysis is not included as part of the current analysis,
 include a description of how it would be included in the next phases of the
 project.
 
