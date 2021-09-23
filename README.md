@@ -36,9 +36,6 @@ Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/m
 
 Alan To add: 
 
-✓ Description and explanation of model’s confusion matrix, including final
-accuracy score 
-
 
 Ryan to add: Note: If statistical analysis is not included as part of the current analysis,
 include a description of how it would be included in the next phases of the
