@@ -35,9 +35,7 @@ Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/m
 ### On Machine Learning
 
 Alan To add: 
-✓ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
-✓ Description of how model was trained (or retrained, if they are using an
-existing model) 
+
 ✓ Description and explanation of model’s confusion matrix, including final
 accuracy score 
 
@@ -70,7 +68,7 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
 
 #### Summary
-Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%.
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. SVM’s confusion matrix had 61201 true positives and 4509 false positives with no false negatives or true negatives. 
   
 The diagram for the machine learning model is below: 
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
