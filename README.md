@@ -62,7 +62,7 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 ### Machine Learning Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
 
-#### Summary
+#### Summary - Ryan/Alan to update
 Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. The high balanced accuarcy scores, however, tend to not have high precision,recall, or f1-score.  
 
 The balanced random model the most balanced with an accuracy score of 
