@@ -17,6 +17,7 @@ Our team has chosen to analyze covid data from the CDC. We selected this data du
 
 Ryan To add: 
 ✓ Technologies, languages, tools, and algorithms used throughout the project 
+✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
 ### Data Exploration/Analysis
 Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
@@ -62,7 +63,12 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
 
 #### Summary
-Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. SVM’s confusion matrix had 61201 true positives and 4509 false positives with no false negatives or true negatives. 
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. The high balanced accuarcy scores, however, tend to not have high precision,recall, or f1-score.  
+
+![balancedrandommodel](https://user-images.githubusercontent.com/82983000/134440406-01520fbe-f543-45d7-b0a4-385dc3a1e7d2.png)
+
+
+
   
 The diagram for the machine learning model is below: 
   ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Model%20Diagram%20(1).jpg)
@@ -115,7 +121,4 @@ Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VAC
 ### Covid by VA County Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
 
-
-## Reflection
-Ryan to add: ✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
