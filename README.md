@@ -34,8 +34,6 @@ Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/m
 
 ### On Machine Learning
 
-Alan To add: 
-
 
 Ryan to add: Note: If statistical analysis is not included as part of the current analysis,
 include a description of how it would be included in the next phases of the
