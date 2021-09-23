@@ -17,7 +17,6 @@ Our team has chosen to analyze covid data from the CDC. We selected this data du
 
 Ryan To add: 
 ✓ Technologies, languages, tools, and algorithms used throughout the project 
-✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
 ### Data Exploration/Analysis
 Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
@@ -116,4 +115,7 @@ Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VAC
 ### Covid by VA County Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
 
+
+## Reflection
+✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
