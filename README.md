@@ -62,13 +62,11 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 ### Machine Learning Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/Machine%20Learning%20Dashboard.png)
 
-#### Summary - Ryan/Alan to update
-To add: ✓ Description and explanation of model’s confusion matrix, including final
-accuracy score 
+#### Summary
+Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. These three models had the highest balanced accuracy score, however, they are inaccurate because they don’t have many true or false negatives on the confusion matrix. The Support Vector Machine for example has zero true or false negatives, which means it’s taking the binary form of yes and no answers on “hosp_yn” and making the true positive “no” and false positive “yes” in conclusion ending with a very low precision score. 
 
-Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. The high balanced accuarcy scores, however, tend to not have high precision,recall, or f1-score.  
+The Balanced Random Forest model has a lower accuracy score in comparison to SVM, Decision Trees, or Gradient Boosting but it has a higher one compared to the other models and unlike the high accuracy score models it has a significantly higher precision and f1 score, which means there is a goob balanced between true positive, false positive, true negative, and false negative. The Balanced Random Forest Model then led us to the conclusion that the column with the most correlation on hospitalization rates was the age group, and the age group that had the most yes as opposed to no was in the 65+ range. 
 
-The balanced random model the most balanced with an accuracy score of 
 
 ![balancedrandommodel](https://user-images.githubusercontent.com/82983000/134440482-003d4cde-2a84-4843-94f9-3deeffefff7e.png)
 
