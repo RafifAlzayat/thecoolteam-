@@ -3,7 +3,7 @@
 ### Resources
 **Raw Data Source** : https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://data.cdc.gov/resource/n8mc-b4w4.json, https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4/data, https://rafifcoviddata.s3.amazonaws.com/COVID-19_Case_Surveillance_Public_Use_Data_with_Geography.csv
 
-**Software** : Python, Pandas, Jupyter Notebook, PySpark, Amazon Web Services RDS, pgAdmin (SQL)
+**Tools** : Python, Pandas, Jupyter Notebook, PySpark, Amazon Web Services RDS, pgAdmin (SQL)
 
 
 Json Data info: 19 columns, 28,652,764 rows. 
@@ -19,7 +19,6 @@ Json Data info: 19 columns, 28,652,764 rows.
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. After our data exploration, the team decided to decrease the size of the database and only analyze covid cases in the state of Virginia. 
 
 Ryan To add: 
-✓ Technologies, languages, tools, and algorithms used throughout the project 
 ✓ Recommendation for future analysis ✓ Anything the team would have done differently
 
 ### Data Exploration/Analysis
@@ -68,7 +67,7 @@ The data was in JSON format directly from the CDC website and we loaded the raw 
 #### Summary
 Overall the DecisionTreeClassifier has a slightly higher balanced accuracy score of 93.14% over the GradientBoostingClassifier of 93.07%. DecisionTreeClassifier is both simple to understand and is perfect for the type of data in this given dataset as it is essentially numerical data. GradientBoostingClassifier is not as intelligible as the decision tree, however, they both have similar accuracy ratings which surpass most other machine learning methods. The one that had the highest percentage balanced accuracy score was Support Vector Machine at 93.14%. These three models had the highest balanced accuracy score, however, they are inaccurate because they don’t have many true or false negatives on the confusion matrix. The Support Vector Machine for example has zero true or false negatives, which means it’s taking the binary form of yes and no answers on “hosp_yn” and making the true positive “no” and false positive “yes” in conclusion ending with a very low precision score. 
 
-The Balanced Random Forest model has a lower accuracy score in comparison to SVM, Decision Trees, or Gradient Boosting but it has a higher one compared to the other models and unlike the high accuracy score models it has a significantly higher precision and f1 score, which means there is a goob balanced between true positive, false positive, true negative, and false negative. The Balanced Random Forest Model then led us to the conclusion that the column with the most correlation on hospitalization rates was the age group, and the age group that had the most "yes" as opposed to "no" was in the 65+ range. 
+The Balanced Random Forest model has a lower accuracy score in comparison to SVM, Decision Trees, or Gradient Boosting but it has a higher one compared to the other models and unlike the high accuracy score models it has a significantly higher precision and f1 score, which means there is a good balance between true positive, false positive, true negative, and false negative. The Balanced Random Forest Model then led us to the conclusion that the factor with the most correlation to hospitalization rates was the age group, and the age group that had the most "yes" as opposed to "no" was in the 65+ range. 
 
 
 ![balancedrandommodel](https://user-images.githubusercontent.com/82983000/134440482-003d4cde-2a84-4843-94f9-3deeffefff7e.png)
