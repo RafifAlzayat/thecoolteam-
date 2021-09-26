@@ -18,9 +18,6 @@ Json Data info: 19 columns, 28,652,764 rows.
 ### Data Topic
 Our team has chosen to analyze covid data from the CDC. We selected this data due to its relevancy as well as availability. The data has approximately 26 million rows, with each row being a unique individual that has been tested for covid. It includes the individuals age, race, ethnicity, hospitalization status, state, etc. We'd like to analyze and figure out which factor in the data contributes the most to an individual being hospitalized. After our data exploration, the team decided to decrease the size of the database and only analyze covid cases in the state of Virginia. 
 
-Ryan To add: 
-✓ Recommendation for future analysis ✓ Anything the team would have done differently
-
 ### Data Exploration/Analysis
 Data Preparation/Database Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Data_Prep.ipynb
 
@@ -35,13 +32,6 @@ For the data exploration and analysis phase of our project, we first examined th
 Machine Learning Model Code: https://github.com/RafifAlzayat/thecoolteam-/blob/main/Code/Covid_Machine_Learning.ipynb
 
 ### On Machine Learning
-
-
-Ryan to add: Note: If statistical analysis is not included as part of the current analysis,
-include a description of how it would be included in the next phases of the
-project.
-
-
 The data was in JSON format directly from the CDC website and we loaded the raw data into an AWS RDS which allowed us to make a preliminary dataset using postgres in pgAdmin. The data was then loaded into a csv file using an S3 bucket which can then be loaded into pyspark for cleaning. The data was cleaned to drop null values as well as columns that weren’t essential. The cleaned table data included variables from every state in the United States which we could draw from if we wished to split off into different states. The decision was made to split the dataset further into individual states for a more efficient machine learning process, so the sample state of Virginia was selected. The data was split with a target of “hosp_yn” which was the column that detailed if the patient went to the hospital. A dummy dataset was created without  “hosp_yn” which allowed us to split the data into training and testing sets. The models we decided to use were: 
 
 - Support Vector Machine
@@ -127,4 +117,5 @@ Link to tableau public: https://public.tableau.com/app/profile/ava.wolfe/viz/VAC
 ### Covid by VA County Per Capita Dashboard
 ![alt text](https://github.com/RafifAlzayat/thecoolteam-/blob/main/Covid%20Analysis%20Images/County%20Map.png)
 
-
+## Recommendation for Future Analysis 
+In our analysis of COVID-19 data we found out a lot what factors play into predicting whether or not someone in Virginia is likely to going to be hospitalized. Although with more time and computing power we could see even better results with a larger scope. We can use one-sample t-tests, two-sample t-tests, and ANOVA tests to see how the demographics of the features we used are dispersed nationwide or in different states. Knowing this will add more context to our analysis and to any other states or populations we compare it to.
